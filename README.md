@@ -71,26 +71,26 @@ The API endpoints will be available by default at: `http://localhost:3001/insigh
 
 To protect the server, insight-api has a built it query rate limiter. It can be configurable in `bitcore-node.json` with:
 
-``` json
-  "servicesConfig": {
-    "insight-api": {
-      "rateLimiterOptions": {
-        "whitelist": ["::ffff:127.0.0.1"]
-      }
+```json
+"servicesConfig": {
+  "insight-api": {
+    "rateLimiterOptions": {
+      "whitelist": ["::ffff:127.0.0.1"]
     }
   }
+}
 ```
 
 With all the configuration options available: https://github.com/dashevo/insight-api/blob/master/lib/ratelimiter.js#L10-17
 
 Or disabled entirely with:
 
-``` json
-  "servicesConfig": {
-    "insight-api": {
-      "disableRateLimiter": true
-    }
+```json
+"servicesConfig": {
+  "insight-api": {
+    "disableRateLimiter": true
   }
+}
 ```
 
 ## API HTTP Endpoints
