@@ -58,8 +58,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha -R spec --recursive"
   },
-  "main": "lib",
-  "dashcoreNode": "lib",
+  "main": "lib/index.js",
   "dependencies": {
     "async": "*",
     "@dashevo/dashcore-lib": "^0.15.5",
@@ -71,10 +70,10 @@
     "request": "^2.64.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "proxyquire": "^1.7.2",
-    "should": "^8.3.1",
-    "sinon": "^1.10.3"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "proxyquire": "^1.8.0",
+    "should": "^13.2.3",
+    "sinon": "^7.1.1"
   }
 }
